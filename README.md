@@ -1,5 +1,8 @@
 #### Docker Services Orchestration Demonstration (Kubernetes Orchestration demo also available)
 
+## Project Architecture ##
+![27](https://user-images.githubusercontent.com/5359534/93707594-a8b96f80-fb4d-11ea-83e7-4cbeb76113c4.PNG)
+
 This is a demo application from the [Docker for Web Developers] that demonstrates how multiple services can be integrated and orchestrated using Docker and Docker Compose.
 
 1. Install Docker Desktop for Mac or Docker CE for Windows from https://docker.com and the lastest LTS version of Node.js from https://nodejs.org.
