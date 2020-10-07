@@ -2,12 +2,15 @@ FROM node:alpine
 LABEL author="Sravan Chithari"
 
 WORKDIR /var/www/codewithsravan
+
+COPY ./server.js .
+
 RUN npm install -g pm2@latest
 RUN mkdir -p /var/log/pm2
 
 EXPOSE 8080
 
-ENTRYPOINT ["pm2", "start", "server.js","--name","codewithsravan","--log","/var/log/pm2/pm2.log","--watch","--no-daemon"]
+ENTRYPOINT ["pm2", "start", "server.js","--name","node-codewithsravan","--log","/var/log/pm2/pm2.log","--watch","--no-daemon"]
 
 # To build
 # docker build -f node-codewithsravan.development.dockerfile --tag sravan13/node-codewithsravan ../
